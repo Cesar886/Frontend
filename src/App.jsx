@@ -1,15 +1,13 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './Login';
-import Dashboard from './Dashboard'; // Página a la que redirigimos después del login
+import { DoubleHeader } from './prymary/DoubleHeader'; // Página a la que redirigimos después del login
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<DoubleHeader />} />
       </Routes>
     </Router>
   );

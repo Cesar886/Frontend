@@ -3,10 +3,31 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@mantine/carousel": "^7.12.2",
+    "@mantine/charts": "^7.12.2",
+    "@mantine/code-highlight": "^7.12.2",
+    "@mantine/core": "^7.12.2",
+    "@mantine/dates": "^7.12.2",
+    "@mantine/dropzone": "^7.12.2",
+    "@mantine/form": "^7.12.2",
+    "@mantine/hooks": "^7.12.2",
+    "@mantine/modals": "^7.12.2",
+    "@mantine/notifications": "^7.12.2",
+    "@mantine/nprogress": "^7.12.2",
+    "@mantine/spotlight": "^7.12.2",
+    "@mantine/tiptap": "^7.12.2",
+    "@mantinex/mantine-logo": "^1.0.1",
+    "@tabler/icons-react": "^3.14.0",
+    "@tiptap/extension-link": "^2.6.6",
+    "@tiptap/react": "^2.6.6",
+    "@tiptap/starter-kit": "^2.6.6",
+    "dayjs": "^1.11.13",
+    "embla-carousel-react": "^8.2.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.26.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "recharts": "2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,5 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.1.3"
   }
 }
