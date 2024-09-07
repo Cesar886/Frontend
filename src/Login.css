@@ -78,15 +78,13 @@
     transition: all 0.3s ease;
   }
   
-  /* Estilo de enfoque en los campos de entrada */
   .form-group input:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
   }
   
-  /* Botón de Login */
   .login-button {
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
     background-color: #007bff;
     border: none;
@@ -98,18 +96,15 @@
     transition: all 0.3s ease;
   }
   
-  /* Efecto hover en el botón de Login */
   .login-button:hover {
     background-color: #0056b3;
     box-shadow: 0 8px 15px rgba(0, 91, 187, 0.3);
   }
   
-  /* Efecto active en el botón de Login */
   .login-button:active {
     transform: translateY(2px);
   }
   
-  /* Estilo responsivo para dispositivos móviles */
   @media (max-width: 768px) {
     .login-form {
       padding: 20px;
