@@ -8,7 +8,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3000/api/login', {
+            const response = await fetch('http://localhost:3000/api/login', { // Cambiado a 3001
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -28,25 +28,26 @@ function Login() {
     };
 
     return (
-        <div>
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label>Username:</label>
                 <input
                     type="text"
-                    placeholder="Username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
+            </div>
+            <div>
+                <label>Password:</label>
                 <input
                     type="password"
-                    placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button type="submit">Login</button>
-            </form>
-            <p>{message}</p>
-        </div>
+            </div>
+            <button type="submit">Login</button>
+            {message && <p>{message}</p>}
+        </form>
     );
 }
 
