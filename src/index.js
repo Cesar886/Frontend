@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Importa desde 'react-dom/client' para React 18
 import { MantineProvider } from '@mantine/core'; // Asegúrate de tener esto importado
-import './index.css';
 import '@mantine/core/styles.css';
 import App from './App';
 
